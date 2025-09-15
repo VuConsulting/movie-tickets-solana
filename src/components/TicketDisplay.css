@@ -1,0 +1,226 @@
+.ticket-display {
+  margin-top: 1rem;
+}
+
+.ticket-card {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 2px solid #4ade80;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ticket-header h3 {
+  margin: 0;
+  color: #4ade80;
+  font-size: 1.3rem;
+}
+
+.toggle-details {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+  border: 1px solid #4ade80;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-details:hover {
+  background: rgba(74, 222, 128, 0.3);
+}
+
+.ticket-content {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ticket-poster {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ticket-info {
+  flex: 1;
+}
+
+.ticket-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.ticket-info p {
+  margin: 0.25rem 0;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.ticket-details {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.nft-info, .blockchain-info {
+  margin-bottom: 1rem;
+}
+
+.nft-info h4, .blockchain-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #4ade80;
+  font-size: 1rem;
+}
+
+.mint-address {
+  margin-bottom: 1rem;
+}
+
+.mint-address label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.address-container code {
+  flex: 1;
+  color: #4ade80;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  word-break: break-all;
+  background: none;
+  padding: 0;
+}
+
+.copy-button {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+  border: 1px solid #4ade80;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+  background: rgba(74, 222, 128, 0.3);
+}
+
+.nft-description {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.blockchain-info p {
+  margin: 0.25rem 0;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.ticket-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.view-wallet-button, .share-button {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-wallet-button {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+}
+
+.view-wallet-button:hover {
+  background: linear-gradient(45deg, #5a67d8, #6b46c1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.share-button {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+  border: 1px solid #4ade80;
+}
+
+.share-button:hover {
+  background: rgba(74, 222, 128, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .ticket-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .ticket-poster {
+    align-self: center;
+  }
+  
+  .ticket-actions {
+    flex-direction: column;
+  }
+  
+  .address-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .copy-button {
+    align-self: flex-start;
+  }
+}
