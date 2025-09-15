@@ -73,6 +73,8 @@ A complete movie ticket NFT system built on Solana blockchain, allowing users to
 - View detailed ticket information
 - Share or transfer your ticket NFT
 
+<img width="965" height="695" alt="image" src="https://github.com/user-attachments/assets/3a79cac6-d3e9-4c14-8350-9b413ebdca4d" />
+
 ## 🔧 Smart Contract Details
 
 ### NFT Minting Process
